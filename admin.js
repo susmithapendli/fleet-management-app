@@ -10,5 +10,13 @@ document.getElementById('fleetForm').addEventListener('submit',function(e){
         alert('please fill all required fields');
         return;
     }
+    const fleet ={
+        id: Data.now(),
+        regNo: regNo,
+        category:category,
+        driverName:driverName,
+        isAvailable:isAvailable
+    }
+
 }
 )
