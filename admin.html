@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Fleet Management Dashboard</h1>
+        <div class="filter-section">
+            <select id="categoryFilter">
+                <option value="All">All categories</option>
+                <option value="Auto">Auto</option>
+                <option value="Car">Car</option>
+                <option value="Truck">Truck</option>
+                <option value="Bus">Bus</option>
+            </select>
+            <select id="availabilityFilter">
+                <option value="ALL">All Availability</option>
+                <option value="Available">Available</option>
+                <option value="Unavailable">Unavailable</option>
+            </select>
+            <button class="clear-filter-btn" id="clearFilterBtn">Clear Filter</button>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Add Fleet</h2>
+            <form id="fleetForm">
+                <div class="form-group">
+                    <label for="regNo">Reg No of Vehicle</label>
+                    <input type="text" id="regNo" required>
+
+                </div>
+                <div class="form-group">
+                     <label for="driverName">Driver Name</label>
+                     <input type="text" id="driverName" required>
+                </div>
+                <div class="form-group">
+                    <label for="isAvailable">Is Available</label>
+                    <select id="isAvailable" required>
+                        <option value="Available">Available</option>
+                        <option value="Unavailable">Unavailable</option>
+
+                    </select>
+                </div>
+                <button type="submit" class="add-fleet-btn">Add Fleet</button>
+            </form>
+        </div>
+        <div class="main-content">
+            <div class="fleet-grid" id="fleetGrid">
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
